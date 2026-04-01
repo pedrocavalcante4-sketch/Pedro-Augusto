@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Substitua pelo link da sua colagem de imagens */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('sua-imagem-de-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo da Foto Circular */
+.profile-container {
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white; /* Opcional: destaque para a foto */
+    object-fit: cover;
+}
+
+/* Estilo dos Botões */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    background-color: #dcdcdc; /* Cinza claro da imagem */
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 18px;
+    border-radius: 50px; /* Bordas bem arredondadas (pill shape) */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.link-button:hover {
+    background-color: #c0c0c0;
+    transform: scale(1.03);
+}
